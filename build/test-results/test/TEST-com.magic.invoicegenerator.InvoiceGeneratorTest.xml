@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.magic.invoicegenerator.InvoiceGeneratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-15T09:27:46" hostname="DESKTOP-38KI29F" time="0.026">
+  <properties/>
+  <testcase name="dummy()" classname="com.magic.invoicegenerator.InvoiceGeneratorTest" time="0.026"/>
+  <system-out><![CDATA[Welcome to Invoice Generator
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

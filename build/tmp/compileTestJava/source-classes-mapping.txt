@@ -1,0 +1,2 @@
+com/magic/invoicegenerator/InvoiceGeneratorTest.java
+ com.magic.invoicegenerator.InvoiceGeneratorTest

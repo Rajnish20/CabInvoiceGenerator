@@ -1,0 +1,2 @@
+com/magic/invoicegenerator/service/InvoiceGenerator.java
+ com.magic.invoicegenerator.service.InvoiceGenerator
