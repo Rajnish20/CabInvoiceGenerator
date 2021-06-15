@@ -1,12 +1,12 @@
 package com.magic.invoicegenerator;
 
+import com.magic.invoicegenerator.entity.InvoiceSummary;
 import com.magic.invoicegenerator.entity.Ride;
 import com.magic.invoicegenerator.service.InvoiceGenerator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class InvoiceGeneratorTest {
-
 
     @Test
     public void givenTimeAndDistance_ShouldReturnTotalFare() {
@@ -27,12 +27,12 @@ public class InvoiceGeneratorTest {
     }
 
     @Test
-    public void givenMultipleRide_ShouldReturnTotalFare() {
+    public void givenMultipleRide_ShouldReturnInvoiceSummary() {
         InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
         Ride[] rides = {new Ride(5, 20),
                 new Ride(0.1, 1)};
-        double fare = invoiceGenerator.calculateFare(rides);
-        Assertions.assertEquals(75, fare);
+        InvoiceSummary expectedSummary = new InvoiceSummary(2, 75);
+        InvoiceSummary summary = invoiceGenerator.calculateFare(rides);
+        Assertions.assertEquals(expectedSummary, summary);
     }
-
 }
